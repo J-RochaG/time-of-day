@@ -84,25 +84,26 @@
 
 	//PUT IN PLACE FOR TESTING - REMOVE LINE BELOW!!
 	
-
+	//This sets the time for the morning from 5am to 12pm and the correct morning image.
 	if(myHour > 5 && myHour < 12){//morning
 		myGreeting = "Good Morning!";
 		myColor = "orange";
 		myPic = "morning.jpg";
 	
 
-
+	//This esle if statement sets the afternoon image and time to appear on a page. 12pm to 6pm
 	} else if(myHour >= 12 && myHour < 18){
 		myGreeting = "Good Afternoon!";
 		myColor = "green";
 		myPic = "afternoon.jpg";
 
+	//This else if statement changes it to the evening image page color when the time is 6pm to 11pm
 	} else if(myHour >= 18 && myHour < 23){
 		myGreeting = "Good Evening!";
 		myColor = "red";
 		myPic = "evening.jpg";
 
-		
+	//This is the night time mode where the page will be purple with the night image any time that we didnt mention above so 11pm to 5am
 	} else{//night
 		myGreeting = "Good Night!";
 		myColor = "purple";
